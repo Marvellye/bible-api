@@ -1,0 +1,30 @@
+[
+  {
+    "id": "kjv",
+    "name": "King James Version",
+    "year": 1611,
+    "language": "English",
+    "description": "Authorised Version of the Bible (1611) with modernisation of spelling and punctuation only. The text is unaltered.",
+    "books_count": 66,
+    "chapters_count": 1189,
+    "verses_count": 31102,
+    "books_url": "bible/kjv/books.json",
+    "book_url_template": "bible/kjv/{book}.json",
+    "chapter_url_template": "bible/kjv/{book}/{chapter}.json",
+    "random_url": "bible/kjv/random.json"
+  },
+  {
+    "id": "kjv1611",
+    "name": "King James Version 1611 (original spelling)",
+    "year": 1611,
+    "language": "English",
+    "description": "The original 1611 Authorised Version, retaining original long-s (ſ), early modern spelling and paragraph markers (¶). Includes the Apocrypha.",
+    "books_count": 80,
+    "chapters_count": 1355,
+    "verses_count": 36702,
+    "books_url": "bible/kjv1611/books.json",
+    "book_url_template": "bible/kjv1611/{book}.json",
+    "chapter_url_template": "bible/kjv1611/{book}/{chapter}.json",
+    "random_url": "bible/kjv1611/random.json"
+  }
+]

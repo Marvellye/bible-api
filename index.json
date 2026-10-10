@@ -1,0 +1,43 @@
+{
+  "name": "Bible API",
+  "description": "Free, open-source, static Bible API. The entire KJV (1611) is available as plain JSON files served straight from a CDN — no API keys, no rate limits, no server.",
+  "kind": "static-json-api",
+  "default_version": "kjv",
+  "versions_url": "bible/versions.json",
+  "random_url": "random.json",
+  "endpoints": {
+    "versions": "bible/versions.json",
+    "books": "bible/{version}/books.json",
+    "book": "bible/{version}/{book}.json",
+    "chapter": "bible/{version}/{book}/{chapter}.json",
+    "verse": "bible/{version}/{book}/{chapter}/{verse}",
+    "random": "bible/{version}/random.json"
+  },
+  "notes": [
+    "A single verse is selected client-side from its chapter file: chapter.verses.find(v => v.verse === n).",
+    "Book identifiers are lowercase slugs, e.g. 'genesis', '1-corinthians', 'song-of-solomon'.",
+    "Chapter and verse numbers are integers.",
+    "Versions: kjv (66 books) and kjv1611 (80 books, original 1611 spelling plus Apocrypha).",
+    "random.json is a static shuffled index of every verse, not a per-request random result. Pick a random index into it, then fetch the chapter file for the text."
+  ],
+  "versions": [
+    {
+      "id": "kjv",
+      "name": "King James Version",
+      "year": 1611,
+      "books_count": 66,
+      "chapters_count": 1189,
+      "verses_count": 31102,
+      "books_url": "bible/kjv/books.json"
+    },
+    {
+      "id": "kjv1611",
+      "name": "King James Version 1611 (original spelling)",
+      "year": 1611,
+      "books_count": 80,
+      "chapters_count": 1355,
+      "verses_count": 36702,
+      "books_url": "bible/kjv1611/books.json"
+    }
+  ]
+}

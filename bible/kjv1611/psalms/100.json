@@ -1,0 +1,27 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 100,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Make a ioyfull noise vnto the Lord, all ye lands."
+    },
+    {
+      "verse": 2,
+      "text": "Serue the Lord with gladnes: come before his presence with singing."
+    },
+    {
+      "verse": 3,
+      "text": "Know ye that the Lord, hee is God, it is he that hath made vs, and not we our selues: wee are his people, and the sheepe of his pasture."
+    },
+    {
+      "verse": 4,
+      "text": "Enter into his gates with thanksgiuing, and into his Courts with praise: bee thankfull vnto him, and blesse his Name."
+    },
+    {
+      "verse": 5,
+      "text": "For the Lord is good, his mercy is euerlasting: and his trueth endureth to all generations."
+    }
+  ]
+}

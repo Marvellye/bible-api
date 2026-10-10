@@ -1,0 +1,31 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 1,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Blessed is the man that walketh not in the counsell of the vngodly, nor standeth in the way of sinners, nor sitteth in the seat of the scornefull."
+    },
+    {
+      "verse": 2,
+      "text": "But his delight is in the Law of the Lord, and in his Law doeth he meditate day and night."
+    },
+    {
+      "verse": 3,
+      "text": "And he shalbe like a tree planted by the riuers of water, that bringeth foorth his fruit in his season, his leafe also shall not wither, and whatsoeuer he doeth, shall prosper."
+    },
+    {
+      "verse": 4,
+      "text": "The vngodly are not so: but are like the chaffe, which the winde driueth away."
+    },
+    {
+      "verse": 5,
+      "text": "Therefore the vngodly shall not stand in the iudgement, nor sinners in the Congregation of the righteous."
+    },
+    {
+      "verse": 6,
+      "text": "For the Lord knoweth the way of the righteous: but the way of the vngodly shall perish."
+    }
+  ]
+}

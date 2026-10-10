@@ -1,0 +1,35 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 120,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "In my distresse I cried vnto the Lord: and hee heard me."
+    },
+    {
+      "verse": 2,
+      "text": "Deliuer my soule, O Lord, from lying lips: and from a deceitfull tongue."
+    },
+    {
+      "verse": 3,
+      "text": "What shall be giuen vnto thee? or what shalbe done vnto thee, thou false tongue?"
+    },
+    {
+      "verse": 4,
+      "text": "Sharpe arrowes of the mightie: with coales of iuniper."
+    },
+    {
+      "verse": 5,
+      "text": "Woe is me, that I soiourne in Mesech: that I dwell in the tents of Kedar."
+    },
+    {
+      "verse": 6,
+      "text": "My soule hath long dwelt with him that hateth peace."
+    },
+    {
+      "verse": 7,
+      "text": "I am for peace: but when I speak, they are for warre."
+    }
+  ]
+}

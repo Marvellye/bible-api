@@ -1,0 +1,722 @@
+[
+  {
+    "id": "genesis",
+    "name": "Genesis",
+    "testament": "old-testament",
+    "chapters": 50,
+    "verses": 1533,
+    "book_url": "bible/kjv1611/genesis.json",
+    "chapters_url": "bible/kjv1611/genesis/{chapter}.json"
+  },
+  {
+    "id": "exodus",
+    "name": "Exodus",
+    "testament": "old-testament",
+    "chapters": 40,
+    "verses": 1213,
+    "book_url": "bible/kjv1611/exodus.json",
+    "chapters_url": "bible/kjv1611/exodus/{chapter}.json"
+  },
+  {
+    "id": "leviticus",
+    "name": "Leviticus",
+    "testament": "old-testament",
+    "chapters": 27,
+    "verses": 859,
+    "book_url": "bible/kjv1611/leviticus.json",
+    "chapters_url": "bible/kjv1611/leviticus/{chapter}.json"
+  },
+  {
+    "id": "numbers",
+    "name": "Numbers",
+    "testament": "old-testament",
+    "chapters": 36,
+    "verses": 1288,
+    "book_url": "bible/kjv1611/numbers.json",
+    "chapters_url": "bible/kjv1611/numbers/{chapter}.json"
+  },
+  {
+    "id": "deuteronomy",
+    "name": "Deuteronomy",
+    "testament": "old-testament",
+    "chapters": 34,
+    "verses": 959,
+    "book_url": "bible/kjv1611/deuteronomy.json",
+    "chapters_url": "bible/kjv1611/deuteronomy/{chapter}.json"
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "testament": "old-testament",
+    "chapters": 24,
+    "verses": 658,
+    "book_url": "bible/kjv1611/joshua.json",
+    "chapters_url": "bible/kjv1611/joshua/{chapter}.json"
+  },
+  {
+    "id": "judges",
+    "name": "Judges",
+    "testament": "old-testament",
+    "chapters": 21,
+    "verses": 618,
+    "book_url": "bible/kjv1611/judges.json",
+    "chapters_url": "bible/kjv1611/judges/{chapter}.json"
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "testament": "old-testament",
+    "chapters": 4,
+    "verses": 85,
+    "book_url": "bible/kjv1611/ruth.json",
+    "chapters_url": "bible/kjv1611/ruth/{chapter}.json"
+  },
+  {
+    "id": "1-samuel",
+    "name": "1 Samuel",
+    "testament": "old-testament",
+    "chapters": 31,
+    "verses": 810,
+    "book_url": "bible/kjv1611/1-samuel.json",
+    "chapters_url": "bible/kjv1611/1-samuel/{chapter}.json"
+  },
+  {
+    "id": "2-samuel",
+    "name": "2 Samuel",
+    "testament": "old-testament",
+    "chapters": 24,
+    "verses": 695,
+    "book_url": "bible/kjv1611/2-samuel.json",
+    "chapters_url": "bible/kjv1611/2-samuel/{chapter}.json"
+  },
+  {
+    "id": "1-kings",
+    "name": "1 Kings",
+    "testament": "old-testament",
+    "chapters": 22,
+    "verses": 816,
+    "book_url": "bible/kjv1611/1-kings.json",
+    "chapters_url": "bible/kjv1611/1-kings/{chapter}.json"
+  },
+  {
+    "id": "2-kings",
+    "name": "2 Kings",
+    "testament": "old-testament",
+    "chapters": 25,
+    "verses": 719,
+    "book_url": "bible/kjv1611/2-kings.json",
+    "chapters_url": "bible/kjv1611/2-kings/{chapter}.json"
+  },
+  {
+    "id": "1-chronicles",
+    "name": "1 Chronicles",
+    "testament": "old-testament",
+    "chapters": 29,
+    "verses": 942,
+    "book_url": "bible/kjv1611/1-chronicles.json",
+    "chapters_url": "bible/kjv1611/1-chronicles/{chapter}.json"
+  },
+  {
+    "id": "2-chronicles",
+    "name": "2 Chronicles",
+    "testament": "old-testament",
+    "chapters": 36,
+    "verses": 822,
+    "book_url": "bible/kjv1611/2-chronicles.json",
+    "chapters_url": "bible/kjv1611/2-chronicles/{chapter}.json"
+  },
+  {
+    "id": "ezra",
+    "name": "Ezra",
+    "testament": "old-testament",
+    "chapters": 10,
+    "verses": 280,
+    "book_url": "bible/kjv1611/ezra.json",
+    "chapters_url": "bible/kjv1611/ezra/{chapter}.json"
+  },
+  {
+    "id": "nehemiah",
+    "name": "Nehemiah",
+    "testament": "old-testament",
+    "chapters": 13,
+    "verses": 406,
+    "book_url": "bible/kjv1611/nehemiah.json",
+    "chapters_url": "bible/kjv1611/nehemiah/{chapter}.json"
+  },
+  {
+    "id": "esther",
+    "name": "Esther",
+    "testament": "old-testament",
+    "chapters": 10,
+    "verses": 167,
+    "book_url": "bible/kjv1611/esther.json",
+    "chapters_url": "bible/kjv1611/esther/{chapter}.json"
+  },
+  {
+    "id": "job",
+    "name": "Job",
+    "testament": "old-testament",
+    "chapters": 42,
+    "verses": 1070,
+    "book_url": "bible/kjv1611/job.json",
+    "chapters_url": "bible/kjv1611/job/{chapter}.json"
+  },
+  {
+    "id": "psalms",
+    "name": "Psalms",
+    "testament": "old-testament",
+    "chapters": 150,
+    "verses": 2461,
+    "book_url": "bible/kjv1611/psalms.json",
+    "chapters_url": "bible/kjv1611/psalms/{chapter}.json"
+  },
+  {
+    "id": "proverbs",
+    "name": "Proverbs",
+    "testament": "old-testament",
+    "chapters": 31,
+    "verses": 915,
+    "book_url": "bible/kjv1611/proverbs.json",
+    "chapters_url": "bible/kjv1611/proverbs/{chapter}.json"
+  },
+  {
+    "id": "ecclesiastes",
+    "name": "Ecclesiastes",
+    "testament": "old-testament",
+    "chapters": 12,
+    "verses": 222,
+    "book_url": "bible/kjv1611/ecclesiastes.json",
+    "chapters_url": "bible/kjv1611/ecclesiastes/{chapter}.json"
+  },
+  {
+    "id": "song-of-solomon",
+    "name": "Song of Solomon",
+    "testament": "old-testament",
+    "chapters": 8,
+    "verses": 117,
+    "book_url": "bible/kjv1611/song-of-solomon.json",
+    "chapters_url": "bible/kjv1611/song-of-solomon/{chapter}.json"
+  },
+  {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "testament": "old-testament",
+    "chapters": 66,
+    "verses": 1292,
+    "book_url": "bible/kjv1611/isaiah.json",
+    "chapters_url": "bible/kjv1611/isaiah/{chapter}.json"
+  },
+  {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "testament": "old-testament",
+    "chapters": 52,
+    "verses": 1364,
+    "book_url": "bible/kjv1611/jeremiah.json",
+    "chapters_url": "bible/kjv1611/jeremiah/{chapter}.json"
+  },
+  {
+    "id": "lamentations",
+    "name": "Lamentations",
+    "testament": "old-testament",
+    "chapters": 5,
+    "verses": 154,
+    "book_url": "bible/kjv1611/lamentations.json",
+    "chapters_url": "bible/kjv1611/lamentations/{chapter}.json"
+  },
+  {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "testament": "old-testament",
+    "chapters": 48,
+    "verses": 1273,
+    "book_url": "bible/kjv1611/ezekiel.json",
+    "chapters_url": "bible/kjv1611/ezekiel/{chapter}.json"
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel",
+    "testament": "old-testament",
+    "chapters": 12,
+    "verses": 357,
+    "book_url": "bible/kjv1611/daniel.json",
+    "chapters_url": "bible/kjv1611/daniel/{chapter}.json"
+  },
+  {
+    "id": "hosea",
+    "name": "Hosea",
+    "testament": "old-testament",
+    "chapters": 14,
+    "verses": 197,
+    "book_url": "bible/kjv1611/hosea.json",
+    "chapters_url": "bible/kjv1611/hosea/{chapter}.json"
+  },
+  {
+    "id": "joel",
+    "name": "Joel",
+    "testament": "old-testament",
+    "chapters": 3,
+    "verses": 73,
+    "book_url": "bible/kjv1611/joel.json",
+    "chapters_url": "bible/kjv1611/joel/{chapter}.json"
+  },
+  {
+    "id": "amos",
+    "name": "Amos",
+    "testament": "old-testament",
+    "chapters": 9,
+    "verses": 146,
+    "book_url": "bible/kjv1611/amos.json",
+    "chapters_url": "bible/kjv1611/amos/{chapter}.json"
+  },
+  {
+    "id": "obadiah",
+    "name": "Obadiah",
+    "testament": "old-testament",
+    "chapters": 1,
+    "verses": 21,
+    "book_url": "bible/kjv1611/obadiah.json",
+    "chapters_url": "bible/kjv1611/obadiah/{chapter}.json"
+  },
+  {
+    "id": "jonah",
+    "name": "Jonah",
+    "testament": "old-testament",
+    "chapters": 4,
+    "verses": 48,
+    "book_url": "bible/kjv1611/jonah.json",
+    "chapters_url": "bible/kjv1611/jonah/{chapter}.json"
+  },
+  {
+    "id": "micah",
+    "name": "Micah",
+    "testament": "old-testament",
+    "chapters": 7,
+    "verses": 105,
+    "book_url": "bible/kjv1611/micah.json",
+    "chapters_url": "bible/kjv1611/micah/{chapter}.json"
+  },
+  {
+    "id": "nahum",
+    "name": "Nahum",
+    "testament": "old-testament",
+    "chapters": 3,
+    "verses": 47,
+    "book_url": "bible/kjv1611/nahum.json",
+    "chapters_url": "bible/kjv1611/nahum/{chapter}.json"
+  },
+  {
+    "id": "habakkuk",
+    "name": "Habakkuk",
+    "testament": "old-testament",
+    "chapters": 3,
+    "verses": 56,
+    "book_url": "bible/kjv1611/habakkuk.json",
+    "chapters_url": "bible/kjv1611/habakkuk/{chapter}.json"
+  },
+  {
+    "id": "zephaniah",
+    "name": "Zephaniah",
+    "testament": "old-testament",
+    "chapters": 3,
+    "verses": 53,
+    "book_url": "bible/kjv1611/zephaniah.json",
+    "chapters_url": "bible/kjv1611/zephaniah/{chapter}.json"
+  },
+  {
+    "id": "haggai",
+    "name": "Haggai",
+    "testament": "old-testament",
+    "chapters": 2,
+    "verses": 38,
+    "book_url": "bible/kjv1611/haggai.json",
+    "chapters_url": "bible/kjv1611/haggai/{chapter}.json"
+  },
+  {
+    "id": "zechariah",
+    "name": "Zechariah",
+    "testament": "old-testament",
+    "chapters": 14,
+    "verses": 211,
+    "book_url": "bible/kjv1611/zechariah.json",
+    "chapters_url": "bible/kjv1611/zechariah/{chapter}.json"
+  },
+  {
+    "id": "malachi",
+    "name": "Malachi",
+    "testament": "old-testament",
+    "chapters": 4,
+    "verses": 55,
+    "book_url": "bible/kjv1611/malachi.json",
+    "chapters_url": "bible/kjv1611/malachi/{chapter}.json"
+  },
+  {
+    "id": "matthew",
+    "name": "Matthew",
+    "testament": "new-testament",
+    "chapters": 28,
+    "verses": 1071,
+    "book_url": "bible/kjv1611/matthew.json",
+    "chapters_url": "bible/kjv1611/matthew/{chapter}.json"
+  },
+  {
+    "id": "mark",
+    "name": "Mark",
+    "testament": "new-testament",
+    "chapters": 16,
+    "verses": 678,
+    "book_url": "bible/kjv1611/mark.json",
+    "chapters_url": "bible/kjv1611/mark/{chapter}.json"
+  },
+  {
+    "id": "luke",
+    "name": "Luke",
+    "testament": "new-testament",
+    "chapters": 24,
+    "verses": 1151,
+    "book_url": "bible/kjv1611/luke.json",
+    "chapters_url": "bible/kjv1611/luke/{chapter}.json"
+  },
+  {
+    "id": "john",
+    "name": "John",
+    "testament": "new-testament",
+    "chapters": 21,
+    "verses": 879,
+    "book_url": "bible/kjv1611/john.json",
+    "chapters_url": "bible/kjv1611/john/{chapter}.json"
+  },
+  {
+    "id": "acts",
+    "name": "Acts",
+    "testament": "new-testament",
+    "chapters": 28,
+    "verses": 1007,
+    "book_url": "bible/kjv1611/acts.json",
+    "chapters_url": "bible/kjv1611/acts/{chapter}.json"
+  },
+  {
+    "id": "romans",
+    "name": "Romans",
+    "testament": "new-testament",
+    "chapters": 16,
+    "verses": 433,
+    "book_url": "bible/kjv1611/romans.json",
+    "chapters_url": "bible/kjv1611/romans/{chapter}.json"
+  },
+  {
+    "id": "1-corinthians",
+    "name": "1 Corinthians",
+    "testament": "new-testament",
+    "chapters": 16,
+    "verses": 437,
+    "book_url": "bible/kjv1611/1-corinthians.json",
+    "chapters_url": "bible/kjv1611/1-corinthians/{chapter}.json"
+  },
+  {
+    "id": "2-corinthians",
+    "name": "2 Corinthians",
+    "testament": "new-testament",
+    "chapters": 13,
+    "verses": 257,
+    "book_url": "bible/kjv1611/2-corinthians.json",
+    "chapters_url": "bible/kjv1611/2-corinthians/{chapter}.json"
+  },
+  {
+    "id": "galatians",
+    "name": "Galatians",
+    "testament": "new-testament",
+    "chapters": 6,
+    "verses": 149,
+    "book_url": "bible/kjv1611/galatians.json",
+    "chapters_url": "bible/kjv1611/galatians/{chapter}.json"
+  },
+  {
+    "id": "ephesians",
+    "name": "Ephesians",
+    "testament": "new-testament",
+    "chapters": 6,
+    "verses": 155,
+    "book_url": "bible/kjv1611/ephesians.json",
+    "chapters_url": "bible/kjv1611/ephesians/{chapter}.json"
+  },
+  {
+    "id": "philippians",
+    "name": "Philippians",
+    "testament": "new-testament",
+    "chapters": 4,
+    "verses": 104,
+    "book_url": "bible/kjv1611/philippians.json",
+    "chapters_url": "bible/kjv1611/philippians/{chapter}.json"
+  },
+  {
+    "id": "colossians",
+    "name": "Colossians",
+    "testament": "new-testament",
+    "chapters": 4,
+    "verses": 95,
+    "book_url": "bible/kjv1611/colossians.json",
+    "chapters_url": "bible/kjv1611/colossians/{chapter}.json"
+  },
+  {
+    "id": "1-thessalonians",
+    "name": "1 Thessalonians",
+    "testament": "new-testament",
+    "chapters": 5,
+    "verses": 89,
+    "book_url": "bible/kjv1611/1-thessalonians.json",
+    "chapters_url": "bible/kjv1611/1-thessalonians/{chapter}.json"
+  },
+  {
+    "id": "2-thessalonians",
+    "name": "2 Thessalonians",
+    "testament": "new-testament",
+    "chapters": 3,
+    "verses": 47,
+    "book_url": "bible/kjv1611/2-thessalonians.json",
+    "chapters_url": "bible/kjv1611/2-thessalonians/{chapter}.json"
+  },
+  {
+    "id": "1-timothy",
+    "name": "1 Timothy",
+    "testament": "new-testament",
+    "chapters": 6,
+    "verses": 113,
+    "book_url": "bible/kjv1611/1-timothy.json",
+    "chapters_url": "bible/kjv1611/1-timothy/{chapter}.json"
+  },
+  {
+    "id": "2-timothy",
+    "name": "2 Timothy",
+    "testament": "new-testament",
+    "chapters": 4,
+    "verses": 83,
+    "book_url": "bible/kjv1611/2-timothy.json",
+    "chapters_url": "bible/kjv1611/2-timothy/{chapter}.json"
+  },
+  {
+    "id": "titus",
+    "name": "Titus",
+    "testament": "new-testament",
+    "chapters": 3,
+    "verses": 46,
+    "book_url": "bible/kjv1611/titus.json",
+    "chapters_url": "bible/kjv1611/titus/{chapter}.json"
+  },
+  {
+    "id": "philemon",
+    "name": "Philemon",
+    "testament": "new-testament",
+    "chapters": 1,
+    "verses": 25,
+    "book_url": "bible/kjv1611/philemon.json",
+    "chapters_url": "bible/kjv1611/philemon/{chapter}.json"
+  },
+  {
+    "id": "hebrews",
+    "name": "Hebrews",
+    "testament": "new-testament",
+    "chapters": 13,
+    "verses": 303,
+    "book_url": "bible/kjv1611/hebrews.json",
+    "chapters_url": "bible/kjv1611/hebrews/{chapter}.json"
+  },
+  {
+    "id": "james",
+    "name": "James",
+    "testament": "new-testament",
+    "chapters": 5,
+    "verses": 108,
+    "book_url": "bible/kjv1611/james.json",
+    "chapters_url": "bible/kjv1611/james/{chapter}.json"
+  },
+  {
+    "id": "1-peter",
+    "name": "1 Peter",
+    "testament": "new-testament",
+    "chapters": 5,
+    "verses": 105,
+    "book_url": "bible/kjv1611/1-peter.json",
+    "chapters_url": "bible/kjv1611/1-peter/{chapter}.json"
+  },
+  {
+    "id": "2-peter",
+    "name": "2 Peter",
+    "testament": "new-testament",
+    "chapters": 3,
+    "verses": 61,
+    "book_url": "bible/kjv1611/2-peter.json",
+    "chapters_url": "bible/kjv1611/2-peter/{chapter}.json"
+  },
+  {
+    "id": "1-john",
+    "name": "1 John",
+    "testament": "new-testament",
+    "chapters": 5,
+    "verses": 105,
+    "book_url": "bible/kjv1611/1-john.json",
+    "chapters_url": "bible/kjv1611/1-john/{chapter}.json"
+  },
+  {
+    "id": "2-john",
+    "name": "2 John",
+    "testament": "new-testament",
+    "chapters": 1,
+    "verses": 13,
+    "book_url": "bible/kjv1611/2-john.json",
+    "chapters_url": "bible/kjv1611/2-john/{chapter}.json"
+  },
+  {
+    "id": "3-john",
+    "name": "3 John",
+    "testament": "new-testament",
+    "chapters": 1,
+    "verses": 14,
+    "book_url": "bible/kjv1611/3-john.json",
+    "chapters_url": "bible/kjv1611/3-john/{chapter}.json"
+  },
+  {
+    "id": "jude",
+    "name": "Jude",
+    "testament": "new-testament",
+    "chapters": 1,
+    "verses": 25,
+    "book_url": "bible/kjv1611/jude.json",
+    "chapters_url": "bible/kjv1611/jude/{chapter}.json"
+  },
+  {
+    "id": "revelation",
+    "name": "Revelation",
+    "testament": "new-testament",
+    "chapters": 22,
+    "verses": 404,
+    "book_url": "bible/kjv1611/revelation.json",
+    "chapters_url": "bible/kjv1611/revelation/{chapter}.json"
+  },
+  {
+    "id": "1-esdras",
+    "name": "1 Esdras",
+    "testament": "apocrypha",
+    "chapters": 9,
+    "verses": 448,
+    "book_url": "bible/kjv1611/1-esdras.json",
+    "chapters_url": "bible/kjv1611/1-esdras/{chapter}.json"
+  },
+  {
+    "id": "2-esdras",
+    "name": "2 Esdras",
+    "testament": "apocrypha",
+    "chapters": 16,
+    "verses": 874,
+    "book_url": "bible/kjv1611/2-esdras.json",
+    "chapters_url": "bible/kjv1611/2-esdras/{chapter}.json"
+  },
+  {
+    "id": "tobit",
+    "name": "Tobit",
+    "testament": "apocrypha",
+    "chapters": 14,
+    "verses": 244,
+    "book_url": "bible/kjv1611/tobit.json",
+    "chapters_url": "bible/kjv1611/tobit/{chapter}.json"
+  },
+  {
+    "id": "judith",
+    "name": "Judith",
+    "testament": "apocrypha",
+    "chapters": 16,
+    "verses": 339,
+    "book_url": "bible/kjv1611/judith.json",
+    "chapters_url": "bible/kjv1611/judith/{chapter}.json"
+  },
+  {
+    "id": "wisdom-of-solomon",
+    "name": "Wisdom of Solomon",
+    "testament": "apocrypha",
+    "chapters": 19,
+    "verses": 436,
+    "book_url": "bible/kjv1611/wisdom-of-solomon.json",
+    "chapters_url": "bible/kjv1611/wisdom-of-solomon/{chapter}.json"
+  },
+  {
+    "id": "ecclesiasticus",
+    "name": "Ecclesiasticus",
+    "testament": "apocrypha",
+    "chapters": 51,
+    "verses": 1393,
+    "book_url": "bible/kjv1611/ecclesiasticus.json",
+    "chapters_url": "bible/kjv1611/ecclesiasticus/{chapter}.json"
+  },
+  {
+    "id": "baruch",
+    "name": "Baruch",
+    "testament": "apocrypha",
+    "chapters": 5,
+    "verses": 140,
+    "book_url": "bible/kjv1611/baruch.json",
+    "chapters_url": "bible/kjv1611/baruch/{chapter}.json"
+  },
+  {
+    "id": "letter-of-jeremiah",
+    "name": "Letter of Jeremiah",
+    "testament": "apocrypha",
+    "chapters": 1,
+    "verses": 73,
+    "book_url": "bible/kjv1611/letter-of-jeremiah.json",
+    "chapters_url": "bible/kjv1611/letter-of-jeremiah/{chapter}.json"
+  },
+  {
+    "id": "prayer-of-azariah",
+    "name": "Prayer of Azariah",
+    "testament": "apocrypha",
+    "chapters": 1,
+    "verses": 67,
+    "book_url": "bible/kjv1611/prayer-of-azariah.json",
+    "chapters_url": "bible/kjv1611/prayer-of-azariah/{chapter}.json"
+  },
+  {
+    "id": "susanna",
+    "name": "Susanna",
+    "testament": "apocrypha",
+    "chapters": 1,
+    "verses": 64,
+    "book_url": "bible/kjv1611/susanna.json",
+    "chapters_url": "bible/kjv1611/susanna/{chapter}.json"
+  },
+  {
+    "id": "bel-and-the-dragon",
+    "name": "Bel and the Dragon",
+    "testament": "apocrypha",
+    "chapters": 1,
+    "verses": 42,
+    "book_url": "bible/kjv1611/bel-and-the-dragon.json",
+    "chapters_url": "bible/kjv1611/bel-and-the-dragon/{chapter}.json"
+  },
+  {
+    "id": "prayer-of-manasseh",
+    "name": "Prayer of Manasseh",
+    "testament": "apocrypha",
+    "chapters": 1,
+    "verses": 1,
+    "book_url": "bible/kjv1611/prayer-of-manasseh.json",
+    "chapters_url": "bible/kjv1611/prayer-of-manasseh/{chapter}.json"
+  },
+  {
+    "id": "1-maccabees",
+    "name": "1 Maccabees",
+    "testament": "apocrypha",
+    "chapters": 16,
+    "verses": 924,
+    "book_url": "bible/kjv1611/1-maccabees.json",
+    "chapters_url": "bible/kjv1611/1-maccabees/{chapter}.json"
+  },
+  {
+    "id": "2-maccabees",
+    "name": "2 Maccabees",
+    "testament": "apocrypha",
+    "chapters": 15,
+    "verses": 555,
+    "book_url": "bible/kjv1611/2-maccabees.json",
+    "chapters_url": "bible/kjv1611/2-maccabees/{chapter}.json"
+  }
+]

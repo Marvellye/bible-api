@@ -1,0 +1,39 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 121,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "I will lift vp mine eyes vnto the hilles: from whence commeth my helpe."
+    },
+    {
+      "verse": 2,
+      "text": "My helpe commeth from the Lord: which made heauen and earth."
+    },
+    {
+      "verse": 3,
+      "text": "He will not suffer thy foote to bee moued: he that keepeth thee will not slumber."
+    },
+    {
+      "verse": 4,
+      "text": "Behold, he that keepeth Israel; shall neither slumber nor sleepe."
+    },
+    {
+      "verse": 5,
+      "text": "The Lord is thy keeper: the Lord is thy shade, vpon thy right hand."
+    },
+    {
+      "verse": 6,
+      "text": "The sunne shall not smite thee by day; nor the moone by night."
+    },
+    {
+      "verse": 7,
+      "text": "The Lord shall preserue thee from all euill: hee shall preserue thy soule."
+    },
+    {
+      "verse": 8,
+      "text": "The Lord shall preserue thy going out, and thy comming in: from this time foorth and euen for euermore."
+    }
+  ]
+}

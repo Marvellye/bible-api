@@ -1,0 +1,31 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 23,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "The Lord is my shepheard, I shall not want."
+    },
+    {
+      "verse": 2,
+      "text": "He maketh me to lie downe in greene pastures: he leadeth mee beside the still waters."
+    },
+    {
+      "verse": 3,
+      "text": "He restoreth my soule: he leadeth me in the pathes of righteousnes, for his names sake."
+    },
+    {
+      "verse": 4,
+      "text": "Yea though I walke through the valley of the shadowe of death, I will feare no euill: for thou art with me, thy rod and thy staffe, they comfort me."
+    },
+    {
+      "verse": 5,
+      "text": "Thou preparest a table before me, in the presence of mine enemies: thou anointest my head with oyle, my cuppe runneth ouer."
+    },
+    {
+      "verse": 6,
+      "text": "Surely goodnes and mercie shall followe me all the daies of my life: and I will dwell in the house of the Lord for euer."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 123,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Vnto thee lift I vp mine eyes: O thou that dwellest in the heauens."
+    },
+    {
+      "verse": 2,
+      "text": "Beholde, as the eyes of seruants looke vnto the hand of their Masters, and as the eyes of a maiden, vnto the hand of her mistresse: so our eyes waite vpon the Lord our God, vntill that he haue mercy vpon vs."
+    },
+    {
+      "verse": 3,
+      "text": "Haue mercy vpon vs, O Lord, haue mercy vpon vs: for we are exceedingly filled with contempt."
+    },
+    {
+      "verse": 4,
+      "text": "Our soule is exceedingly filled with the scorning of those that are at ease: and with the contempt of the proud."
+    }
+  ]
+}

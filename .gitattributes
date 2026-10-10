@@ -1,0 +1,6 @@
+# Keep line endings stable everywhere: the JSON is served as-is by the CDN,
+# so the committed bytes must not depend on who checked the repo out.
+* text=auto eol=lf
+
+*.json text eol=lf
+*.md   text eol=lf

@@ -1,0 +1,31 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 150,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "Praise ye the Lord. Praise God in his Sanctuarie: Praise him in the firmament of his power."
+    },
+    {
+      "verse": 2,
+      "text": "Praise him for his mightie actes: Praise him according to his excellent greatnesse."
+    },
+    {
+      "verse": 3,
+      "text": "Praise him with the sound of the Trumpet: Prayse him with the Psalterie and Harpe."
+    },
+    {
+      "verse": 4,
+      "text": "Praise him with the timbrell and dance: praise him with stringed instruments, and Organes."
+    },
+    {
+      "verse": 5,
+      "text": "Praise him vpon the loud cymbals: praise him vpon the high sounding cymbals."
+    },
+    {
+      "verse": 6,
+      "text": "Let euery thing that hath breath, praise the Lord. Praise yee the Lord."
+    }
+  ]
+}

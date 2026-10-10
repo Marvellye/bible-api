@@ -1,0 +1,31 @@
+{
+  "book": "Psalms",
+  "version": "kjv1611",
+  "chapter": 13,
+  "verses": [
+    {
+      "verse": 1,
+      "text": "How long wilt thou forget mee (O Lord) for euer? how long wilt thou hide thy face from me?"
+    },
+    {
+      "verse": 2,
+      "text": "How long shall I take counsel in my soule, hauing sorrow in my heart dayly? how long shall mine enemie be exalted ouer me?"
+    },
+    {
+      "verse": 3,
+      "text": "Consider and heare me, O Lord my God: lighten mine eyes, lest I sleep the sleepe of death."
+    },
+    {
+      "verse": 4,
+      "text": "Least mine enimie say, I haue preuailed against him: and those that trouble mee, reioyce, when I am moued."
+    },
+    {
+      "verse": 5,
+      "text": "But I haue trusted in thy mercy, my heart shall reioyce in thy saluation."
+    },
+    {
+      "verse": 6,
+      "text": "I will sing vnto the Lord, because hee hath dealt bountifully with mee."
+    }
+  ]
+}
