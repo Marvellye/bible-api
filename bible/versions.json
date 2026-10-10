@@ -10,8 +10,7 @@
     "verses_count": 31102,
     "books_url": "bible/kjv/books.json",
     "book_url_template": "bible/kjv/{book}.json",
-    "chapter_url_template": "bible/kjv/{book}/{chapter}.json",
-    "random_url": "bible/kjv/random.json"
+    "chapter_url_template": "bible/kjv/{book}/{chapter}.json"
   },
   {
     "id": "kjv1611",
@@ -24,7 +23,6 @@
     "verses_count": 36702,
     "books_url": "bible/kjv1611/books.json",
     "book_url_template": "bible/kjv1611/{book}.json",
-    "chapter_url_template": "bible/kjv1611/{book}/{chapter}.json",
-    "random_url": "bible/kjv1611/random.json"
+    "chapter_url_template": "bible/kjv1611/{book}/{chapter}.json"
   }
 ]

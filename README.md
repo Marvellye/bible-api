@@ -14,7 +14,6 @@ There is no server, no database, no API key and no rate limit. Every endpoint be
 - [Endpoints](#endpoints)
 - [Response schemas](#response-schemas)
 - [Fetching a single verse](#fetching-a-single-verse)
-- [Random verses (`random.json`)](#random-verses-randomjson)
 - [Book identifiers](#book-identifiers)
 - [Versions](#versions)
 - [Error handling](#error-handling)
@@ -95,7 +94,6 @@ See [Deploying to jsDelivr](#deploying-to-jsdelivr) for the full details.
 | A whole book | `/bible/{version}/{book}.json` | All chapters and verses |
 | One chapter | `/bible/{version}/{book}/{chapter}.json` | All verses in that chapter |
 | One verse | `/bible/{version}/{book}/{chapter}/{verse}` | Client-side lookup from the chapter |
-| A random verse | `/bible/{version}/random.json` | Shuffled index of every verse |
 
 `{version}` is `kjv` (default) or `kjv1611`.
 `{book}` is a lowercase slug — see [Book identifiers](#book-identifiers).
@@ -255,111 +253,6 @@ const range = chapter.verses.filter(v => v.verse >= 1 && v.verse <= 6);
 
 To batch many requests, fetch the whole book instead —
 `${BASE}/psalms.json` is one request and already contains everything.
-
----
-
-## Random verses (`random.json`)
-
-### Read this first: a static file cannot be random
-
-`/bible/kjv/random.json` is **not** a random verse. It is the *same bytes for
-every caller, forever*, because that is what a file on a CDN is. Fetching it
-twice gives you two identical responses.
-
-What it does give you is the thing you actually want: **a random verse, chosen
-by your client, uniform over all 31,102 verses of the KJV.** Each visitor picks
-their own index, so each visitor gets their own verse — while the file itself
-stays small, cacheable and immutable.
-
-### How it works
-
-`random.json` is a uniformly shuffled list of every verse in the version, as
-compact `[book, chapter, verse]` pointers. The shuffle is baked in with a fixed
-seed, so the order leaks nothing about reading order and a client cannot bias
-its sample by looking at the file.
-
-1. Fetch `bible/{version}/random.json`.
-2. Pick a random index into `pointers`.
-3. Fetch the chapter file for that verse and read the text.
-
-Two requests, both tiny, both cached at the edge indefinitely.
-
-```js
-const BASE = 'https://cdn.jsdelivr.net/gh/USER/REPO';
-
-async function randomVerse(version = 'kjv') {
-  const index = await fetch(`${BASE}/bible/${version}/random.json`).then(r => r.json());
-
-  const [book, chapter, verse] =
-    index.pointers[Math.floor(Math.random() * index.entry_count)];
-
-  const data = await fetch(`${BASE}/${index.chapter_url_template
-    .replace('{book}', book)
-    .replace('{chapter}', chapter)}`).then(r => r.json());
-
-  return {
-    reference: `${data.book} ${chapter}:${verse}`,
-    text: data.verses.find(v => v.verse === verse).text
-  };
-}
-
-console.log(await randomVerse());
-// { reference: 'Proverbs 13:1',
-//   text: "A wise son heareth his father's instruction: ..." }
-```
-
-The simpler hardcoded form, if you don't need the generic version handling:
-
-```js
-async function randomVerse() {
-  const index = await fetch(`${BASE}/bible/kjv/random.json`).then(r => r.json());
-  const [book, chapter, verse] =
-    index.pointers[Math.floor(Math.random() * index.entry_count)];
-  const data = await fetch(`${BASE}/bible/kjv/${book}/${chapter}.json`).then(r => r.json());
-  return data.verses.find(v => v.verse === verse);
-}
-```
-
-The root `/random.json` is a small manifest pointing at the per-version files,
-with `kjv` as the default:
-
-```json
-{
-  "default_version": "kjv",
-  "versions": { "kjv": "bible/kjv/random.json", "kjv1611": "bible/kjv1611/random.json" },
-  "entry_counts": { "kjv": 31102, "kjv1611": 36702 }
-}
-```
-
-### Why pointers instead of inline text?
-
-An index containing every verse *with* its text would be ~1 MB compressed. The
-pointer index is **91 KB**, and the chapter files it points at are already being
-cached by every other reader. Storing text inline would mean duplicating the
-whole Bible in a second file for no benefit.
-
-If you genuinely need one request, fetch the book file instead — it contains
-every chapter of that book at once:
-
-```js
-// one request, random verse from within a single book
-const book = await fetch(`${BASE}/bible/kjv/proverbs.json`).then(r => r.json());
-const chapter = book.chapters[Math.floor(Math.random() * book.chapters.length)];
-const verse = chapter.verses[Math.floor(Math.random() * chapter.verses.length)];
-```
-
-### Reshuffling
-
-The same seed always produces the same file, so releases are reproducible. To
-bake a new shuffle, pick a different seed:
-
-```bash
-node scripts/generate-random.mjs            # default seed (1611)
-node scripts/generate-random.mjs --seed 42  # new shuffle for a release
-```
-
-Run this and commit whenever the underlying text changes, then tag the
-release. Consumers pinned to an older tag keep their old shuffle forever.
 
 ---
 
@@ -537,7 +430,7 @@ async function getChapter(version, book, chapter) {
   immutability. `@latest` follows the default branch and can change under you.
 - Chapter files are small: a median of 4.5 KB and a maximum of 21 KB. Prefer
   `/bible/kjv/john/3.json` over `/bible/kjv/john.json` when you need one chapter.
-- Going fully offline? `git clone` the repo — it is about 26 MB of JSON across
+- Going fully offline? `git clone` the repo — it is about 25 MB of JSON across
   ~2,700 files, and works with any static file server. Over the wire jsDelivr
   serves it Brotli-compressed, so a full transfer is a fraction of that.
 
@@ -568,9 +461,6 @@ https://cdn.jsdelivr.net/gh/USER/REPO/bible/kjv/john/3.json
 **4. Cut a release tag** whenever the data changes, so consumers can pin:
 
 ```bash
-# if you touched the text, rebuild the random index with a fresh shuffle first
-node scripts/generate-random.mjs --seed 42
-
 git tag v1.0.0
 git push origin v1.0.0
 ```
@@ -582,7 +472,7 @@ https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/bible/kjv/john/3.json
 ### Notes
 
 - **Size limits.** jsDelivr serves files up to 20 MB; the largest here is
-  `bible/kjv1611/psalms.json` at about 370 KB.
+  `bible/kjv1611/psalms.json` at about 380 KB.
 - **File count.** The repository contains a few thousand small JSON files. That
   is fine — but avoid converting every verse into its own file, which would
   push the repository past 50,000 paths.
@@ -596,24 +486,19 @@ https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/bible/kjv/john/3.json
 ```
 .
 ├── index.json                     # API manifest
-├── random.json                    # manifest pointing at the per-version random indexes
 ├── README.md
 ├── LICENSE
 ├── .gitattributes
-├── scripts/
-│   └── generate-random.mjs        # rebuilds random.json (no dependencies)
 └── bible/
     ├── versions.json              # metadata for both versions
     ├── kjv/                       # 66 books, modernised spelling
     │   ├── books.json             # the book index
-    │   ├── random.json            # shuffled [book, chapter, verse] index
     │   ├── genesis.json           # whole book
     │   ├── genesis/1.json         # chapter 1
     │   ├── genesis/2.json
     │   └── ...
     └── kjv1611/                   # 80 books, original 1611 spelling + Apocrypha
         ├── books.json
-        ├── random.json
         ├── genesis.json
         ├── genesis/1.json
         └── ...
@@ -625,9 +510,7 @@ Naming rules, which are what make the URLs predictable:
 - Chapter file: `<slug>/<n>.json` where `n` is a plain 1-based integer with no
   padding — `psalms/1.json`, never `psalms/001.json` or `psalms/psalm-1.json`.
 - Numbers keep their digits: `1-corinthians`, not `first-corinthians`.
-- Every file is pretty-printed UTF-8 JSON with a trailing newline — except
-  `random.json`, which is minified, because it holds 31,102 entries and
-  whitespace would add about a megabyte for no benefit.
+- Every file is pretty-printed UTF-8 JSON with a trailing newline.
 
 ---
 
@@ -642,13 +525,13 @@ across as follows, with `BASE` standing in for your CDN origin.
 | `GET /{book}` | `GET /bible/kjv/{book}.json` |
 | `GET /{book}/{chapter}` | `GET /bible/kjv/{book}/{chapter}.json` |
 | `GET /{book}/{chapter}/{verse}` | `GET /bible/kjv/{book}/{chapter}.json` + client-side lookup |
-| `GET /random` | `GET /bible/kjv/random.json` + client-side pick |
-| `GET /random/chapter` | *(no direct equivalent — pick a book and chapter client-side)* |
-| `GET /random/chapter/verse` | `GET /bible/kjv/random.json` + client-side pick |
+| `GET /random` | *(no equivalent — pick client-side)* |
+| `GET /random/chapter` | *(no equivalent — pick client-side)* |
+| `GET /random/chapter/verse` | *(no equivalent — pick client-side)* |
 | `GET /1611` | `GET /bible/kjv1611/books.json` |
 | `GET /1611/{book}` | `GET /bible/kjv1611/{book}.json` |
 | `GET /1611/{book}/{chapter}` | `GET /bible/kjv1611/{book}/{chapter}.json` |
-| `GET /1611/random` | `GET /bible/kjv1611/random.json` + client-side pick |
+| `GET /1611/random` | *(no equivalent — pick client-side)* |
 
 Four other changes worth knowing:
 
@@ -661,11 +544,9 @@ Four other changes worth knowing:
 3. **The response shape changed.** The old verse route returned
    `{ book, chapter, verse, content }`; the chapter file now returns
    `{ book, version, chapter, verses: [{ verse, text }] }`. Adjust your parser.
-4. **Random endpoints moved client-side.** Randomness cannot be computed in a
-   static file, so `/random` no longer returns a pre-picked verse. Fetch
-   `random.json` and pick from it yourself — see
-   [Random verses](#random-verses-randomjson). For a random *chapter*, pick a
-   book and then a chapter:
+4. **The random endpoints are gone.** A static file cannot pick a random verse —
+   every caller would receive identical bytes — so there is nothing on the CDN
+   to serve for `/random`. Reproduce them with your own picker:
 
    ```js
    const books = await fetch(`${BASE}/bible/kjv/books.json`).then(r => r.json());

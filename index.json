@@ -4,21 +4,18 @@
   "kind": "static-json-api",
   "default_version": "kjv",
   "versions_url": "bible/versions.json",
-  "random_url": "random.json",
   "endpoints": {
     "versions": "bible/versions.json",
     "books": "bible/{version}/books.json",
     "book": "bible/{version}/{book}.json",
     "chapter": "bible/{version}/{book}/{chapter}.json",
-    "verse": "bible/{version}/{book}/{chapter}/{verse}",
-    "random": "bible/{version}/random.json"
+    "verse": "bible/{version}/{book}/{chapter}/{verse}"
   },
   "notes": [
     "A single verse is selected client-side from its chapter file: chapter.verses.find(v => v.verse === n).",
     "Book identifiers are lowercase slugs, e.g. 'genesis', '1-corinthians', 'song-of-solomon'.",
     "Chapter and verse numbers are integers.",
-    "Versions: kjv (66 books) and kjv1611 (80 books, original 1611 spelling plus Apocrypha).",
-    "random.json is a static shuffled index of every verse, not a per-request random result. Pick a random index into it, then fetch the chapter file for the text."
+    "Versions: kjv (66 books) and kjv1611 (80 books, original 1611 spelling plus Apocrypha)."
   ],
   "versions": [
     {
